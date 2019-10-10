@@ -21,4 +21,5 @@ class String
     array = array.map{|sentences| sentences.split("!")}.flatten
     array = array.reject{|sentences| sentences == ""}
     array.length
+  end
 end
