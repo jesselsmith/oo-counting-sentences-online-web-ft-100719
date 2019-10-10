@@ -19,6 +19,6 @@ class String
     array = self.split(".")
     array = array.map {|sentences| sentences.split("?")}.flatten
     array = array.map{|sentences| sentences.split("!")}.flatten
-    array = array.reject(|sentences| sentences == "")
+    array = array.reject{|sentences| sentences == ""}
     array.length
 end
