@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    # self.split(/[.?!]+/).length
+    # self.split(/[.?!]+/).length is the simpler method with regex
     array = self.split(".")
     array = array.map {|sentences| sentences.split("?")}.flatten
     array = array.map{|sentences| sentences.split("!")}.flatten
